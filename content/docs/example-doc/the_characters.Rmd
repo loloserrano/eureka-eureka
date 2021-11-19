@@ -50,6 +50,17 @@ contracts <- contracts %>%
 
 ```
 
+
+Here again is the general gender breakdown, with some additional information about plaintiff/defendant status. 
+
 ```{r}
-contracts 
+
+parties %>%
+  filter(typenomf == "Man" | typenomf == "Woman") %>%
+  ggplot +
+  geom_bar(aes(typenomf, fill = side))
+
+gendertotaltable %>%
+  knitr::kable()
+
 ```

@@ -2,7 +2,7 @@
 title: Frugging KCP
 draft: false
 role: Lolo Serrano
-avatar: static/frug1.png
+avatar: /Users/professorserrano/Desktop/Documents/GitHub/eureka-eureka/resources/_gen/images/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_3.png
 bio: A postmodern (queer) feminist analysis of a 1L contracts casebook.
 organization:
   name: UPenn
