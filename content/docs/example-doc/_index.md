@@ -1,5 +1,5 @@
 ---
-title: Table of Contents
+title: Introduction and Contents
 description: A big-picture view of the project and the layout of the other chapters.
 toc: true
 authors:
