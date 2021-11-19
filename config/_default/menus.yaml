@@ -5,6 +5,6 @@ main:
   - name: Posts
     url: /posts/
     weight: 2
-  - name: Frugging
-    url: /frugging/
+  - name: Docs
+    url: /docs/
     weight: 3
