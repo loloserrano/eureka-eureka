@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: https://eager-lewin-95ed80.netlify.app/
 title: Frugging KCP
 
 # Comment when installing using Hugo Modules
@@ -41,6 +41,8 @@ taxonomies:
   tag: tags
   series: series
   author: authors
+
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 build:
   useResourceCacheWhen: always
