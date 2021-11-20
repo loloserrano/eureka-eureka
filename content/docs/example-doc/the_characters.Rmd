@@ -14,7 +14,6 @@ featuredVideo: ~
 featuredImage: ~
 ---
 
-## 
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 library(tidyverse)
@@ -54,37 +53,14 @@ contracts <- contracts %>%
 
 Here again is the general gender breakdown, with some additional information about plaintiff/defendant status. 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+```{r}
 
 parties %>%
   filter(typenomf == "Man" | typenomf == "Woman") %>%
   ggplot +
-  geom_bar(aes(typenomf, fill = side)) 
+  geom_bar(aes(typenomf, fill = side))
 
 gendertotaltable %>%
   knitr::kable()
-
-```
-
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
-parties %>%
-  filter(typenomf == "Woman") %>%
-  group_by(year, spouse) %>%
-  count() %>%
-  ggplot(aes(year,n, color = spouse)) +
-  geom_point(alpha = 0.5, size = 3, position = position_jitter(w = 1, h = 0.1)) +
-  scale_color_manual(values=c("red","blue","forestgreen"), labels = c("Misc. Family","Unrelated","Spouse/Partner")) +
-  labs(title = "Women")
-
-
-parties %>%
-  filter(typenomf == "Man") %>%
-  group_by(year, spouse) %>%
-  count() %>%
-  ggplot(aes(year,n, color = spouse)) +
-  geom_point(alpha = 0.5, size = 3, position = position_jitter(w = 1, h = 0.1)) +
-  scale_color_manual(values=c("red","blue","forestgreen"), labels = c("Misc. Family","Unrelated","Spouse/Partner")) +
-  labs(title = "Men")
-
 
 ```
