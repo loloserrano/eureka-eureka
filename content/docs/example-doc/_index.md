@@ -11,7 +11,7 @@ lastmod: '2021-11-19'
 draft: false
 ---
 
-## Queering Frug's Feminism
+## Frug and Re-Reading KCP
 
 In this section I describe the purpose, framework, and theory of this project. I detail the work of Mary Joe Frug on which this project is based and introduce new ideas, both from her other pieces and from later work, that complicate the idea of gender. 
 
